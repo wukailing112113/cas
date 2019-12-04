@@ -11,6 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
@@ -26,6 +27,7 @@ import java.util.Map;
  * cas 参数配置含义参考：http://elim.iteye.com/blog/2142631
  */
 @SpringBootApplication
+@EnableFeignClients// 服务调用
 public class AppRun {
     private static final String ENCODING = "UTF-8";
 

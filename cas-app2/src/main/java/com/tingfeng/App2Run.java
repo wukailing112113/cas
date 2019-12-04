@@ -78,6 +78,7 @@ public class App2Run {
 
         registration.setFilter(new AuthenticationFilter());
         registration.addUrlPatterns("*.html");
+        registration.addUrlPatterns("/api/*");
         initParameters.put("casServerLoginUrl", CasConfig.APP_LOGIN_PAGE);
         initParameters.put("serverName", CasConfig.SERVER_NAME);
 
@@ -106,7 +107,7 @@ public class App2Run {
         registration.setFilter(new Cas30ProxyReceivingTicketValidationFilter());
         // 设定匹配的路径
         registration.addUrlPatterns("*.html");
-        registration.addUrlPatterns("/water/*");
+        registration.addUrlPatterns("/api/*");
         Map<String, String> initParameters = new HashMap();
         initParameters.put("casServerUrlPrefix", CasConfig.CAS_SERVER_PATH);
         initParameters.put("serverName", CasConfig.SERVER_NAME);

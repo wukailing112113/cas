@@ -97,7 +97,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
+            <version>8.0.16</version>
         </dependency>
 
         <!--&lt;!&ndash;jdbc认证需要添加的，这个是cas的依赖包&ndash;&gt;-->
